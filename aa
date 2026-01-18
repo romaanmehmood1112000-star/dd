@@ -1,0 +1,10 @@
+fireclickdetector(game.workspace.Lobby.rob.ClickDetector
+wait()
+local args = {
+    false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("rob"):FireServer(unpack(args))
+wait()
+fireclickdetector(game.workspace.Lobby.bob.ClickDetector)
+wait(1.6)
+game:GetService("ReplicatedStorage"):WaitForChild("bob"):FireServer()
